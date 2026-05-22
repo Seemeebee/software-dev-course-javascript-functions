@@ -72,3 +72,12 @@ for (let i = 0; i < names.length; i++) {
 */
 
 // ✅ Your refactored code goes below this line!
+
+function welcomeGreet(greeting,name) {
+   let hello = `Invite statement ${greeting} and ${name}`
+   return hello;
+}
+
+console.log("Welcome, Alice!");
+console.log("Welcome, Bob!");
+console.log("Welcome, Charlie!");
