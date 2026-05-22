@@ -33,9 +33,9 @@ This activity reinforces:
 // ============================================
 
 // Script 1 - Greeting multiple users
-console.log("Welcome, Alice!");
-console.log("Welcome, Bob!");
-console.log("Welcome, Charlie!");
+console.log(greetUser("Alice"));
+console.log(greetUser("Bob"));
+console.log(greetUser("Charlie"));
 
 // Script 2 - Sum calculation
 let num1 = 5, num2 = 10;
@@ -73,11 +73,31 @@ for (let i = 0; i < names.length; i++) {
 
 // ✅ Your refactored code goes below this line!
 
-function welcomeGreet(greeting,name) {
-   let hello = `Invite statement ${greeting} and ${name}`
-   return hello;
+function greetUser(name) {
+   return `Welcome, ${name}!`;
 }
 
-console.log("Welcome, Alice!");
-console.log("Welcome, Bob!");
-console.log("Welcome, Charlie!");
+console.log(greetUser("Alice"));
+console.log(greetUser("Bob"));
+console.log(greetUser("Charlie"));
+
+function calculateSum(num1, num2) {
+   let sum = num1 + num2;
+   return sum;
+}
+
+console.log("The sum of 5 and 10 is " + calculateSum(5, 10));
+
+function calculateproduct(num1, num2) {
+   let product = num1 * num2;
+   return product;
+}
+console.log("The product of 5 and 10 is " + calculateproduct(5, 10));
+
+function listNames(names) {
+   console.log("Names in the list:");
+   for (let i = 0; i < names.length; i++) {
+       console.log(names[i]);
+   }
+}
+listNames(["Alice", "Bob", "Charlie"]);
